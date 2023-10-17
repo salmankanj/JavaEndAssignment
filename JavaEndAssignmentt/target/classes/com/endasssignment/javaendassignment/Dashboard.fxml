@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="welcomeUser" layoutX="126.0" layoutY="42.0" prefHeight="19.0" prefWidth="294.0">
+         <font>
+            <Font name="MS Reference Sans Serif" size="18.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="86.0" prefHeight="18.0" prefWidth="99.0" text="Your role is:">
+         <font>
+            <Font name="Microsoft Sans Serif" size="12.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="116.0" prefHeight="18.0" prefWidth="62.0" text="It is now :" />
+      <Label fx:id="userRole" layoutX="167.0" layoutY="87.0" prefHeight="18.0" prefWidth="48.0" />
+      <Label fx:id="dateTime" layoutX="155.0" layoutY="116.0" prefHeight="18.0" prefWidth="252.0" />
+   </children>
+</AnchorPane>

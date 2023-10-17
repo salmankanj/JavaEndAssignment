@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="Product Inventory" layoutX="29.0" layoutY="10.0" style="-fx-font-size: 20px;"/>
+
+    <TableView fx:id="productTable" layoutX="29.0" layoutY="50.0" prefHeight="250.0" prefWidth="542.0">
+        <columns>
+            <TableColumn text="Stock Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="stockName"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button text="Add Product" layoutX="29.0" layoutY="310.0"/>
+
+    <Button text="Edit Product" layoutX="125.0" layoutY="310.0"/>
+
+    <Button text="Delete Product" layoutX="230.0" layoutY="310.0"/>
+</AnchorPane>

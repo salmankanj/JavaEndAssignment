@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="layout" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.endasssignment.javaendassignment.Controller.MainController">
+    <children>
+        <VBox spacing="10.0" style="-fx-background-color: #00325a;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="80.0" />
+            </padding>
+            <children>
+                <Button id="dashboardButton" minWidth="150" onAction="#onDashboardClick" style="-fx-text-fill: white;-fx-background-color: #123d69;-fx-padding: 5px;-fx-font-size: 18;" text="Dashboard" />
+                <Button id="createOrderButton" minWidth="150" onAction="#OnCreateOrderClick" style="-fx-text-fill: white;-fx-background-color: #123d69;-fx-padding: 5px;-fx-font-size: 18;" text="Create Order" />
+                <Button id="productInventoryButton" minWidth="150" onAction="#onProductInventoryClick" style="-fx-text-fill: white;-fx-background-color: #123d69;-fx-padding: 5px;-fx-font-size: 18;" text="Product Inventory" />
+                <Button id="orderHistoryButton" minWidth="150" onAction="#onOrderHistoryClick" style="-fx-text-fill: white;-fx-background-color: #123d69;-fx-padding: 5px;-fx-font-size: 18;" text="Order History" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

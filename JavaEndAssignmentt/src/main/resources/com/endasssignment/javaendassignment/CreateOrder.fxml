@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="393.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+      <Label alignment="CENTER" layoutX="232.0" layoutY="8.0" prefHeight="35.0" prefWidth="219.0" text="Create Order">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+      <Label alignment="CENTER" layoutX="236.0" layoutY="50.0" prefHeight="27.0" prefWidth="199.0" text="Customer Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="194.0" layoutY="90.0" text="First name:" />
+      <Label alignment="CENTER" layoutX="194.0" layoutY="120.0" text="Last name:" />
+      <Label alignment="CENTER" layoutX="194.0" layoutY="145.0" prefHeight="30.0" prefWidth="57.0" text="Email:" />
+      <Label alignment="CENTER" layoutX="194.0" layoutY="180.0" text="Phone number:" />
+
+      <TextField fx:id="firstname" alignment="CENTER" layoutX="299.0" layoutY="86.0" promptText="First name" />
+      <TextField fx:id="lastname" alignment="CENTER" layoutX="299.0" layoutY="116.0" promptText="Last name" />
+      <TextField fx:id="email" alignment="CENTER" layoutX="299.0" layoutY="146.0" promptText="example@gmail.com" />
+      <TextField fx:id="phonenumber" alignment="CENTER" layoutX="299.0" layoutY="176.0" promptText="Phone number" />
+
+      <TableView fx:id="orderview" layoutY="230.0" prefHeight="187.0" prefWidth="662.0">
+         <columns>
+            <TableColumn fx:id="quantitycol" prefWidth="80.0" text="Quantity" />
+            <TableColumn fx:id="nameCol" prefWidth="227.99999237060547" text="Name" />
+            <TableColumn fx:id="categoryCol" prefWidth="175.199951171875" text="Category" />
+            <TableColumn fx:id="priceCol" minWidth="100.0" prefWidth="188.00003051757812" text="Price" />
+         </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="-8.0" layoutY="421.0" prefHeight="117.0" prefWidth="646.0">
+         <children>
+            <Button fx:id="addbtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onAddProductClick" text="Add Product" translateX="5.0" translateY="-10.0" />
+            <Button fx:id="deletebtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onDeleteProductClick" text="Delete Product" translateX="10.0" translateY="-10.0" />
+            <Button fx:id="orderbtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onCreateOrder" text="Create Order" translateX="15.0" translateY="-10.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
