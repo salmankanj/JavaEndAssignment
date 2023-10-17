@@ -1,3 +1,3 @@
 # JavaEndAssignment
 Username:SalmanKanj password:password1
-Usernam:BasselKanj password:password2
+Username:BasselKanj password:password2
